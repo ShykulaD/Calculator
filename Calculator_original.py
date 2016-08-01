@@ -33,8 +33,10 @@ while running:
         second = int(input("Enter second number :"))
         result = first / second
         print(first ,"/" , second , "=" , result)
-    elif cmd == 5:
+    elif cmd == 6:
         print("Quit!")
         running = False
+
+
 
 
