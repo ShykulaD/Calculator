@@ -63,6 +63,3 @@ def calc():
             break
 
 calc()
-
-
-
