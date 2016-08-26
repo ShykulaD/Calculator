@@ -7,7 +7,6 @@ def inputVal(message):
             continue
         else:
             return retVal
-            break
 
 def cont():
     print("Wanna conntinue?")
@@ -19,6 +18,10 @@ def cont():
             continue
         elif answer == "Yes":
             break
+        else:
+            print ("You didn't write Yes or No answer")
+            cont()
+
 
 def calc():
     while True:
