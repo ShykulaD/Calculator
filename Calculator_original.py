@@ -1,10 +1,9 @@
 def inputVal(message):
     while True:
         try:
-            retVal = int(input(message))
+            retVal = float(input(message))
         except ValueError:
             print("Not an integer! Try again.")
-            continue
         else:
             return retVal
 
@@ -14,14 +13,13 @@ def cont():
     print("Type for conntinue 'No'")
     answer = input("Type your choice here: ")
     while True:
-        if answer == "No":
-            continue
-        elif answer == "Yes":
+        if answer == "No" or "no":
+            calc()
+        elif answer == "Yes" or "yes":
             break
         else:
             print ("You didn't write Yes or No answer")
             cont()
-
 
 def calc():
     while True:
